@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <style>
     .swiper-button-next {
@@ -147,6 +148,18 @@
     .dark .cart{
         background-color: var(--darkerBrown);
     }
+
+    .dark .nav_logo{
+        background-color: var(--dark);
+    }
+
+    .dark .nav_logo p{
+        color: var(--light);
+    }
+
+    .dark .sun{
+        background-color: var(--dark);
+    }
    
   
 </style>
@@ -173,12 +186,41 @@
 
 <body>
 
-    <div class="sidebar"></div>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars fa-xl" style="color: #2a1b12;"></i>
+    </div>
+    
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times   fa-2xl " style="color: #2a1b12;"></i>
+        </div>
+        <div class="menu">
+            <div class="item"><a href="#"><i class="fa-solid fa-house fa-2xl" style="color: #2a1b12;"></i>Home</a></div>
+            <div class="item"><a class="sub-btn"><i class="fa-solid fa-table fa-2xl" style="color: #2a1b12;"></i>services<i class="fas fa-angle-right dropdown"></i> </a>
+              <div class="sub-menu">
+                <a href="product.html" class="sub-item">Buy</a>
+                <a href="product.html" class="sub-item">Sell</a>
+                <a href="product.html" class="sub-item">Rent</a>
+              </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-th  fa-2xl " style="color: #2a1b12;"></i>Forms</a></div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-cogs  fa-2xl"  style="color: #2a1b12;"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">sub item 01</a>
+                    <a href="#" class="sub-item">sub item 02</a>
+                  </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-info-circle  fa-2xl" style="color: #2a1b12;" ></i>About</a></div>
+            <div class="item"><a href="#"><i class="fa-solid fa-person-chalkboard fa-2xl" style="color: #2a1b12;"></i>agents</a></div>
+            <div class="item"><a href="#"><i class="fa-solid fa-phone fa-2xl" style="color: #2a1b12;"></i>contact</a></div>
+        </div>
+    </div>
+
+   
     <nav >
 
-        <div class="menu">
-            <i class="fa-solid fa-bars fa-2xl" style="color: #2b1b12;"></i>
-        </div>
+       
         <div class="nav_logo">
             <p>Dwello</p>
         </div>
@@ -187,7 +229,7 @@
                 <p>home</p>
             </div>
             <div class="nav_catagory">
-                <p>service</p>
+                <p><a href="product.html"> service </a></p>
             </div>
             <div class="nav_catagory">
                 <p>agents</p>
@@ -207,10 +249,10 @@
         <div class="nav_icons">
            
             <div class="search">
-                <img src="Vector.png" alt="a" height="100%" width="100%">
+                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #2a1b12;"></i>
             </div>
             <div class="profile">
-                <img src="user.png" alt="a" height="100%" width="100%">
+                <i class="fa-regular fa-user fa-xl" style="color: #2a1b12;"></i>
             </div>
             <div class="sign_up">
                 <a href="signUp.html"><button>sign up</button></a>
@@ -1289,40 +1331,40 @@
                 <p>dwello</p>
             </div>
             <div class="footer1_text">
-                <span>Bringing you closer to your dream home, one click at a time.</span>
+                <li style="list-style: none;"><span>Bringing you closer to your dream home, one click at a time.</span></li>
             </div>
         </div>
         <div class="footer2">
             <ul>
                 <li>About</li>
 
-                <li> Our Story</li>
-                <li>Careers</li>
-                <li>Our Team</li>
-                <li> Resources</li>
+                <li><span> Our Story</span></li>
+                <li><span>Careers</span></li>
+                <li><span>Our Team</span></li>
+                <li><span> Resources</span></li>
 
             </ul>
         </div>
         <div class="footer3">
             <ul>
-                <li>Support</li>
-                <li>FAQ</li>
-                <li>Contact Us</li>
-                <li>Help Center</li>
-                <li>Terms of Service</li></li>
+                <li><span>Support</span></li>
+                <li><span>FAQ</span></li>
+                <li><span>Contact Us</span></li>
+                <li><span>Help Center</span></li>
+                <li><span>Terms of Service</span></li></li>
             </ul>
         </div>
         <div class="footer4">
             <ul>
-                <li>Find Us</li>
-                <li>Events</li>
-                <li>Locations</li>
-                <li>Newsletter</li>
+                <li><span>Find Us</span></li>
+                <li><span>Events</span></li>
+                <li><span>Locations</span></li>
+                <li><span>Newsletter</span></li>
             </ul>
         </div>
         <div class="footer5">
             <div class="footer5_heading">
-                <p>Our Social</p>
+                <p><span>Our Social</span></p>
             </div>
             
                 <div class="social_media">
@@ -1330,7 +1372,7 @@
                         <img src="instagram.png" alt="a" height="100%" width="100%">
                     </div>
                     <div class="social_text">
-                        <p>Instagram</p>
+                        <p><span>Instagram</span></p>
                     </div>
                 </div>
                 <div class="social_media">
@@ -1338,7 +1380,7 @@
                         <img src="facebook.png" alt="aa"  height="100%" width="100%">
                     </div>
                     <div class="social_text">
-                        <p>Facebook</p>
+                        <p><span>Facebook</span></p>
                     </div>
                 </div>
                 <div class="social_media">
@@ -1346,7 +1388,7 @@
                         <img src="twitterx.png" alt="aa"  height="100%" width="100%">
                     </div>
                     <div class="social_text">
-                        <p>Twitter (x)</p>
+                        <p><span>Twitter (x)</span></p>
                     </div>
                 </div>
             </div>
@@ -1384,13 +1426,34 @@
         // $(this).css("background-color","red")
      })
 
-     $(".menu").click(function(){
-        $(this).toggleClass('sidebar')
-     })
 
 
     })
 </script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+       //j query for toggle sub menus
+       $('.sub-btn').click(function(){
+           $(this).next('.sub-menu').slideToggle();
+           $(this).find('.dropdown').toggleClass('rotate');
+       })
+
+       //j query for expand and collesp the sidebar
+
+       $('.menu-btn').click(function(){
+           $('.side-bar').fadeIn();
+           $('.menu-btn').css("visiility","hidden");
+         
+       })
+
+       $('.close-btn').click(function(){
+           $('.side-bar').fadeOut();
+           $('.menu-btn').css("visiility","visible");
+       })
+    })
+   </script>
+
 
 
 </body>

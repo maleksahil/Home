@@ -7,18 +7,96 @@
 
 }
 
-.sidebar{
-    height: 610px;
-    width: 250px;
-    border: 1px solid black;
-    color: #543E32;
+
+.side-bar{
+    background: rgb(212, 184, 166);
+    /* background-color: transparent; */
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
     position: fixed;
-    z-index: 777;
-    background-color: #bb8c72;
-    top: 70px;
+    top: 0;
+    /* left: -100%; */
     display: none;
-    left: 0px;
+    overflow-y: auto;
+    transition: 0.6 ease;
+    z-index: 999;
 }
+
+.side-bar .active{
+    /* left: 0; */
+    /* display: none; */
+}
+
+.side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+.side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .item a{
+    color: #2B1B12;
+    font-size: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+    background: rgba(105, 83, 70, 1);
+    transition: 0.3s ease;
+}
+
+
+
+.side-bar .menu .item i{
+    margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+    /* background:  rgba(42, 27, 18, 1); */
+    display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.close-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+}
+
 
 nav {
     width: 100%;
@@ -30,17 +108,15 @@ nav {
     background: #FEF7F2;
 }
 
-.menu{
+.menu-btn{
     display: none;
-    margin-top: 20px;
-    
 }
 
 
 .nav_logo {
-    height: 80%;
-    width: 10%;
-    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+    /* border: 1px solid black; */
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -56,7 +132,7 @@ nav {
 .nav_catagories {
     height: 80%;
     width: 40%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -65,7 +141,7 @@ nav {
 .nav_icons {
     height: 80%;
     width: 20%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -95,6 +171,16 @@ nav {
     color: #DDC7BB;
 }
 
+.nav_catagory:hover a{
+    /* background-color: #2B1B12; */
+    color: #DDC7BB;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(42, 27, 18, 1);
+}
+
 .nav_catagory:hover > p{
     color: #FEF7F2;
 }
@@ -108,6 +194,9 @@ nav {
     background-size: cover;
     cursor: pointer;
     /* background-color: aquamarine; */
+    position: relative;
+    left: 8%;
+    background-color: #FEF7F2;
 }
 
 .sun{
@@ -123,12 +212,18 @@ nav {
     height: 60%;
     width: 10%;
     /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile {
     height: 60%;
     width: 10%;
     /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sign_up {
@@ -437,9 +532,15 @@ p {
     justify-content: space-around;
     border-radius: 10px;
     background: #DDC7BB;
+    cursor: pointer;
+    transition: all 0.6s ease;
 
 }
 
+
+.bottom_section_box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .bottom_box_icons {
     height: 28%;
@@ -767,7 +868,12 @@ p {
     background-color: #DDC7BB;
     border-radius: 20px;
     overflow: hidden;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
 
+.cart:hover{
+    transform: scale(1.1);
 }
 
 .swiper_image {
@@ -1117,6 +1223,16 @@ footer {
     font-size: 24px;
 }
 
+
+
+li{
+    cursor: pointer;
+}
+
+li span:hover{
+    border-bottom: 2px solid #2B1B12;
+}
+
 .footer1_text {
     width: 219px;
     height: 69px;
@@ -1206,7 +1322,12 @@ footer {
     justify-content: space-between;
     margin-top: 1%;
 }
-
+span{
+    cursor: pointer;
+}
+span:hover{
+    border-bottom: 2px solid #2B1B12;
+}
 .footer5_heading{
     width: 100%;
     height: 20%;
@@ -1344,6 +1465,8 @@ footer {
 .footer1_text span{
     font-size: 13px;
 }
+
+
 }
 
 @media screen and (max-width:900px){
@@ -1545,8 +1668,14 @@ footer {
         display: none;
     }
 
-    .menu{
+    .menu-btn{
         display: block;
+    }
+
+    .nav_logo{
+        position: absolute;
+        right: 10%;
+        background-color: #FEF7F2;
     }
 
     

@@ -306,6 +306,134 @@ button {
     /* align-items: center; */
 }
 
+.popular_locations{
+    width: 100%;
+    height: auto;
+   
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 99999;
+}
+
+.popular_locations_tital{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.popular_locations_tital h1{
+    font-size: 3rem;
+}
+.popular_locations_cards{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    gap: 70px 30px;
+    /* padding-left: 30px; */
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+
+}
+
+.popular_locations_card{
+    width: 400px;
+    height: auto;
+    aspect-ratio: 1/1;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    overflow: hidden;   
+    border-radius: 10px;
+   
+}
+
+.card1{
+    background-image: url("luxaryHouse6.jpeg");
+    background-size: cover;
+}
+
+.card2{
+    background-image: url("luxaryHouse2.jpeg");
+    background-size: cover;
+}
+
+.card3{
+    background-image: url("luxaryHouse3.jpeg");
+    background-size: cover;
+}
+
+.card4{
+    background-image: url("luxaryHouse4.jpeg");
+    background-size: cover;
+}
+
+.card5{
+    background-image: url("luxaryHouse5.jpeg");
+    background-size: cover;
+}
+.card6{
+    background-image: url("luxaryHouse7.jpeg");
+    background-size: cover;
+}
+
+.popular_locations_inner_card{
+    height: 40%;
+    width: 90%;
+    /* border: 1px solid black; */
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+   
+}
+
+.popular_location_inner_card_section{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid black; */
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.popular_location_card_icons{
+    height: 50%;
+    width: 20%;
+    /* border: 1px solid black; */
+    /* background-color: #8621f8; */
+    position: relative;
+    margin-left: 340px;
+    transform: translateX(60px);   
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular_location_card_icon{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+
+
+.popular_locations_card:hover .popular_location_card_icons{
+    transform: translateX(-20px);
+}
+
 .image{
     
     width: 100%;

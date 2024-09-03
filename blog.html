@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="jquery.scrollUp.min.js"></script>
+</head>
+
+<style>
+    a{
+        color: #2a1b12;
+        text-decoration: none;
+    }
+</style>
+<body>
+
+    
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars fa-xl" style="color: #2a1b12;"></i>
+    </div>
+
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times   fa-2xl " style="color: #2a1b12;"></i>
+        </div>
+        <div class="menu">
+            <div class="item"><a href="index.html"><i class="fa-solid fa-house fa-2xl"
+                        style="color: #2a1b12;"></i>Home</a></div>
+            <div class="item"><a class="sub-btn"><i class="fa-solid fa-table fa-2xl"
+                        style="color: #2a1b12;"></i>services<i class="fas fa-angle-right dropdown"></i> </a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Buy</a>
+                    <a href="#" class="sub-item">Sell</a>
+                    <a href="#" class="sub-item">Rent</a>
+                </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-th  fa-2xl " style="color: #2a1b12;"></i>Forms</a></div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-cogs  fa-2xl" style="color: #2a1b12;"></i>Settings<i
+                        class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">sub item 01</a>
+                    <a href="#" class="sub-item">sub item 02</a>
+                </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-info-circle  fa-2xl" style="color: #2a1b12;"></i>About</a>
+            </div>
+            <div class="item"><a href="#"><i class="fa-solid fa-person-chalkboard fa-2xl"
+                        style="color: #2a1b12;"></i>agents</a></div>
+            <div class="item"><a href="#"><i class="fa-solid fa-phone fa-2xl" style="color: #2a1b12;"></i>contact</a>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav_logo">
+            <p>Dwello</p>
+        </div>
+        <div class="nav_catagories">
+            <div class="nav_catagory">
+                <p><a href="index.html" target="_blank">home</a></p>
+            </div>
+            <div class="nav_catagory">
+                <p><a href="product.html" target="_blank">service</a></p>
+            </div>
+            <div class="nav_catagory">
+                <p><a href="aboutUs.html" target="_blank">aboutUs</a></p>
+            </div>
+            <div class="nav_catagory">
+                <p>contact</p>
+            </div>
+            <div class="nav_catagory">
+                <p><a href="blog.html">Blogs</a></p>
+            </div>
+        </div>
+        <div class="nav_icons">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #2a1b12;"></i>
+            </div>
+            <div class="profile">
+                <i class="fa-regular fa-user fa-xl" style="color: #2a1b12;"></i>
+            </div>
+            <div class="sign_up">
+                <a href="signUp.html"><button>sign up</button></a>
+            </div>
+        </div>
+    </nav>
+
+       <!-- loginmodal -->
+       <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">LogIn modal</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade ">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="container-fluid d-flex border">
+                <div class="carousel-item active mt-10">
+                    <img src="los houe1.jpg" class="d-block  opacity-75 W-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-primary ">
+                        <h2>welcome to icoders</h2>
+                        <p>Technology News, Developments and Trends</p>
+                        <button class="btn btn-danger">Technology</button>
+                        <button class="btn btn-primary">Web Development</button>
+                        <button class="btn btn-success">Tech Fun</button>
+                    </div>
+                </div>
+                <div class="carousel-item mt-10">
+                    <img src="los house 2.jpg" class="d-block  opacity-75" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-danger">
+                        <h2>welcome best coding blog</h2>
+                        <p>Technology News, Developments and Trends</p>
+                        <button class="btn btn-danger">Technology</button>
+                        <button class="btn btn-primary">Web Development</button>
+                        <button class="btn btn-success">Tech Fun</button>
+                    </div>
+                </div>
+                <div class="carousel-item mt-10">
+                    <img src="los house 3.jpg" class="d-block  opacity-75" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-warning">
+                        <h2>welcome to award winning blog</h2>
+                        <p>Technology News, Developments and Trends</p>
+                        <button class="btn btn-danger">Technology</button>
+                        <button class="btn btn-primary">Web Development</button>
+                        <button class="btn btn-success">Tech Fun</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container my-4">
+        <div class="row ">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                        <h3 class="mb-0">Global Conferences </h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-sm-block">
+                        <img src="luxaryHouse5.jpeg" class="bd-placeholder-img" width="200" height="200"
+                        style="aspect-ratio: 1/1;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">Learn designing</h3>
+                        <div class="mb-1 text-body-secondary">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-sm-block">
+                        <img src="luxaryHouse2.jpeg" class="bd-placeholder-img" width="200" height="200"
+                            style="aspect-ratio: 1/1;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                        <h3 class="mb-0">Mastering JavaScript</h3>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-sm-block">
+                        <img src="luxaryHouse3.jpeg" class="bd-placeholder-img" width="200" height="200"
+                            style="aspect-ratio: 1/1;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">Python for Beginners</h3>
+                        <div class="mb-1 text-body-secondary">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-sm-block">
+                        <img src="luxaryHouse4.jpeg" class="bd-placeholder-img" width="200" height="200"
+                            style="aspect-ratio: 1/1;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    <footer>
+        <div class="footer1">
+            <div class="footer1_logo">
+                <p>dwello</p>
+            </div>
+            <div class="footer1_text">
+                <span>Bringing you closer to your dream home, one click at a time.</span>
+            </div>
+        </div>
+        <div class="footer2">
+            <ul>
+                <li style="color: #2B1B12; font-weight: 800;">About</li>
+    
+                <li> Our Story</li>
+                <li>Careers</li>
+                <li>Our Team</li>
+                <li> Resources</li>
+    
+            </ul>
+        </div>
+        <div class="footer3">
+            <ul>
+                <li style="color: #2B1B12; font-weight: 800;" >Support</li>
+                <li>FAQ</li>
+                <li>Contact Us</li>
+                <li>Help Center</li>
+                <li>Terms of Service</li></li>
+            </ul>
+        </div>
+        <div class="footer4">
+            <ul>
+                <li style="color: #2B1B12; font-weight: 800;">Find Us</li>
+                <li>Events</li>
+                <li>Locations</li>
+                <li>Newsletter</li>
+            </ul>
+        </div>
+        <div class="footer5">
+            <div class="footer5_heading">
+                <p>Our Social</p>
+            </div>
+            
+                <div class="social_media">
+                    <div class="social_icon">
+                        <img src="instagram.png" alt="a" height="100%" width="100%">
+                    </div>
+                    <div class="social_text">
+                        <p>Instagram</p>
+                    </div>
+                </div>
+                <div class="social_media">
+                    <div class="social_icon">
+                        <img src="facebook.png" alt="aa"  height="100%" width="100%">
+                    </div>
+                    <div class="social_text">
+                        <p>Facebook</p>
+                    </div>
+                </div>
+                <div class="social_media">
+                    <div class="social_icon">
+                        <img src="twitterx.png" alt="aa"  height="100%" width="100%">
+                    </div>
+                    <div class="social_text">
+                        <p>Twitter (x)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //j query for toggle sub menus
+      $('.sub-btn').click(function () {
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      })
+
+      //j query for expand and collesp the sidebar
+
+      $('.menu-btn').click(function () {
+        $('.side-bar').fadeIn();
+        $('.menu-btn').css("visiility", "hidden");
+
+      })
+
+      $('.close-btn').click(function () {
+        $('.side-bar').fadeOut();
+        $('.menu-btn').css("visiility", "visible");
+      })
+
+
+    })
+  </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

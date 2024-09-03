@@ -303,23 +303,40 @@ a {
     text-decoration: none;
 }
 
+.bg-image{
+    background-image: url("backgroundhouse.jpg");
+    background-size: cover;
+    /* border: 1px solid black; */
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
 
 .contact{
-    position: relative;
+    position: absolute;
     min-height: 100vh;
-    padding: 50px 100px;
+    /* padding: 50px 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("backgroundhouse.jpg");
-    background-size: cover;
+    /* background-image: url("backgroundhouse.jpg"); */
+    /* background-size: cover; */
     /* border: 1px solid black; */
+
+    /* filter: blur(4px); */
+    /* -webkit-filter: blur(4px); */
+    z-index: 2;
+    top: 30%;
+    left: 20%;
 }
 
 .contact .content{
     max-width: 800px;
     text-align: center;
+    /* border: 1px solid black; */
 }
 
 .contact .content h2{
@@ -376,7 +393,7 @@ a {
 
 .container .contactInfo .box .icon .text h3{
     font-weight: 500;
-    color: #00bcd4;
+    color: #d45500;
 }
 
 h3{
@@ -444,14 +461,14 @@ p{
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span{
-    color: #e91e63;
+    color:  #2a1b12;
     font-size: 12px;
     transform: translateY(-20px);
 }
 
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
+    background:  #2a1b12;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -652,7 +669,7 @@ footer {
 
 @media (max-width: 991px){
     .contact{
-        padding: 50px;
+        /* padding: 50px; */
     }
 
     .container{
@@ -752,7 +769,26 @@ footer {
         justify-content: center;
         /* border: 1px solid black; */
     }
+
+    .bg-image{
+        aspect-ratio: 1/4;
+    }
+    .contact{
+        left: 0%;
+    }
     
+    .contact .content h2{
+        font-size: 16px;
+        font-weight: 500;
+        /* color: #ec3838; */
+    }
+    
+    .contact .content p{
+        font-size: 16px;
+        font-weight: 300;
+        /* color: #e7eb0d; */
+        color: #d45500;
+    }
 
 
 

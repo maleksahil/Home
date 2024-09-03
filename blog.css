@@ -28,6 +28,11 @@ img {
     overflow-y: auto;
     transition: 0.6 ease;
     z-index: 999;
+    color: #2B1B12;
+}
+
+.side-bar a{
+    color: #2B1B12;
 }
 
 .side-bar .active {

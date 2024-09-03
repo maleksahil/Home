@@ -34,7 +34,7 @@
         <i class="fa-solid fa-bars fa-xl" style="color: #2a1b12;"></i>
     </div>
 
-    <div class="side-bar">
+    <div class="side-bar" style="background: rgb(212, 184, 166);">
         <div class="close-btn">
             <i class="fas fa-times   fa-2xl " style="color: #2a1b12;"></i>
         </div>
@@ -93,7 +93,7 @@
                 <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #2a1b12;"></i>
             </div>
             <div class="profile">
-                <i class="fa-regular fa-user fa-xl" style="color: #2a1b12;"></i>
+                <a href="profile.html"><i class="fa-regular fa-user fa-xl" style="color: #2a1b12;"></i></a>
             </div>
             <div class="sign_up">
                 <a href="signUp.html"><button>sign up</button></a>
@@ -101,11 +101,14 @@
         </div>
     </nav>
 
+    <div class="bg-image"></div>
+
 
     <section class="contact">
         <div class="content">
-            <h2 style="color: #2B1B12;">Contact Us</h2>
-            <p style="color: #2B1B12;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, et ut quae corporis, obcaecati quaerat
+            <h2 style="color: white;">Contact Us</h2>
+            <p style="color: rgb(47, 0, 255);">Get in touch with our friendly and knowledgeable team. We're here to help
+                you find your dream home.
                 libero </p>
         </div>
         <div class="container">
@@ -180,21 +183,22 @@
         <div class="footer2">
             <ul>
                 <li style="color: #2B1B12; font-weight: 800;">About</li>
-    
+
                 <li> Our Story</li>
                 <li>Careers</li>
                 <li>Our Team</li>
                 <li> Resources</li>
-    
+
             </ul>
         </div>
         <div class="footer3">
             <ul>
-                <li style="color: #2B1B12; font-weight: 800;" >Support</li>
+                <li style="color: #2B1B12; font-weight: 800;">Support</li>
                 <li>FAQ</li>
                 <li>Contact Us</li>
                 <li>Help Center</li>
-                <li>Terms of Service</li></li>
+                <li>Terms of Service</li>
+                </li>
             </ul>
         </div>
         <div class="footer4">
@@ -209,60 +213,60 @@
             <div class="footer5_heading">
                 <p>Our Social</p>
             </div>
-            
-                <div class="social_media">
-                    <div class="social_icon">
-                        <img src="instagram.png" alt="a" height="100%" width="100%">
-                    </div>
-                    <div class="social_text">
-                        <p>Instagram</p>
-                    </div>
+
+            <div class="social_media">
+                <div class="social_icon">
+                    <i class="fa-brands fa-instagram" style="font-size: 2rem;"></i>
                 </div>
-                <div class="social_media">
-                    <div class="social_icon">
-                        <img src="facebook.png" alt="aa"  height="100%" width="100%">
-                    </div>
-                    <div class="social_text">
-                        <p>Facebook</p>
-                    </div>
+                <div class="social_text">
+                    <p>Instagram</p>
                 </div>
-                <div class="social_media">
-                    <div class="social_icon">
-                        <img src="twitterx.png" alt="aa"  height="100%" width="100%">
-                    </div>
-                    <div class="social_text">
-                        <p>Twitter (x)</p>
-                    </div>
+            </div>
+            <div class="social_media">
+                <div class="social_icon">
+                    <i class="fa-brands fa-square-facebook" style="font-size: 2rem;"></i>
+                </div>
+                <div class="social_text">
+                    <p>Facebook</p>
+                </div>
+            </div>
+            <div class="social_media">
+                <div class="social_icon">
+                    <i class="fa-brands fa-square-x-twitter" style="font-size: 2rem;"></i>
+                </div>
+                <div class="social_text">
+                    <p>Twitter (x)</p>
                 </div>
             </div>
         </div>
+        </div>
     </footer>
 
-    
-  <script type="text/javascript">
-    $(document).ready(function () {
-      //j query for toggle sub menus
-      $('.sub-btn').click(function () {
-        $(this).next('.sub-menu').slideToggle();
-        $(this).find('.dropdown').toggleClass('rotate');
-      })
 
-      //j query for expand and collesp the sidebar
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //j query for toggle sub menus
+            $('.sub-btn').click(function () {
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            })
 
-      $('.menu-btn').click(function () {
-        $('.side-bar').fadeIn();
-        $('.menu-btn').css("visiility", "hidden");
+            //j query for expand and collesp the sidebar
 
-      })
+            $('.menu-btn').click(function () {
+                $('.side-bar').fadeIn();
+                $('.menu-btn').css("visiility", "hidden");
 
-      $('.close-btn').click(function () {
-        $('.side-bar').fadeOut();
-        $('.menu-btn').css("visiility", "visible");
-      })
+            })
+
+            $('.close-btn').click(function () {
+                $('.side-bar').fadeOut();
+                $('.menu-btn').css("visiility", "visible");
+            })
 
 
-    })
-  </script>
+        })
+    </script>
 
 
 

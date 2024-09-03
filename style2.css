@@ -124,7 +124,7 @@ nav {
 
 .nav_catagories {
     height: 80%;
-    width: 40%;
+    width: 60%;
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
@@ -310,7 +310,7 @@ button {
     width: 100%;
     height: auto;
    
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
     z-index: 99999;
@@ -331,7 +331,7 @@ button {
 .popular_locations_cards{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     gap: 70px 30px;
     /* padding-left: 30px; */
     justify-content: center;
@@ -425,7 +425,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 
@@ -1046,15 +1046,32 @@ footer {
 
    #cart{
     display: none;
-   }
+   } 
+}
 
+@media (width <= 800px) {
+    .menu-btn{
+        display: block;
+    }
 
+    .nav_catagories{
+        display: none;
+    }
 
-
-   
+    .nav_icons{
+        display: none;
+    }
 }
 
 @media screen and (max-width:500px){
+
+    .popular_locations_card{
+        width: 300px;
+    }
+
+    .popular_location_inner_card_section{
+        font-size: 0.7rem;
+    }
   
 
     .footer1 p{
@@ -1321,16 +1338,4 @@ footer {
 
 }
 
-@media (width <= 500px) {
-    .menu-btn{
-        display: block;
-    }
 
-    .nav_catagories{
-        display: none;
-    }
-
-    .nav_icons{
-        display: none;
-    }
-}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home property</title>
+    <link rel="stylesheet" href="property.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="jquery.scrollUp.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #f3efef;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 25%;
+        /* border: 2px solid red; */
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid rgb(29, 5, 238); */
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars fa-xl" style="color: #2a1b12;"></i>
+    </div>
+
+    <div class="side-bar" style="background: rgb(212, 184, 166);">
+        <div class="close-btn">
+            <i class="fas fa-times   fa-2xl " style="color: #2a1b12;"></i>
+        </div>
+        <div class="menu">
+            <div class="item"><a href="index.html"><i class="fa-solid fa-house fa-2xl"
+                        style="color: #2a1b12;"></i>Home</a></div>
+            <div class="item"><a class="sub-btn"><i class="fa-solid fa-table fa-2xl"
+                        style="color: #2a1b12;"></i>services<i class="fas fa-angle-right dropdown"></i> </a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Buy</a>
+                    <a href="#" class="sub-item">Sell</a>
+                    <a href="#" class="sub-item">Rent</a>
+                </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-th  fa-2xl " style="color: #2a1b12;"></i>Forms</a></div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-cogs  fa-2xl" style="color: #2a1b12;"></i>Settings<i
+                        class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="profile.html" class="sub-item">profile</a>
+                    <a href="blog.html" class="sub-item">Blogs</a>
+                </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-info-circle  fa-2xl" style="color: #2a1b12;"></i>About</a>
+            </div>
+            <div class="item"><a href="#"><i class="fa-solid fa-person-chalkboard fa-2xl"
+                        style="color: #2a1b12;"></i>agents</a></div>
+            <div class="item"><a href="form.html"><i class="fa-solid fa-phone fa-2xl"
+                        style="color: #2a1b12;"></i>contact</a>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav_logo">
+            <p>Dwello</p>
+        </div>
+        <div class="nav_catagories">
+            <div class="nav_catagory">
+                <p><a href="index.html" target="_blank">home</a></p>
+            </div>
+            <div class="nav_catagory">
+                <p><a href="product.html" target="_blank">service</a></p>
+            </div>
+            <div class="nav_catagory">
+                <p><a href="aboutUs.html" target="_blank">aboutUs</a></p>
+            </div>
+            <div class="nav_catagory">
+                <p><a href="form.html">contact</a></p>
+            </div>
+            <div class="nav_catagory">
+                <p><a href="blog.html">Blogs</a></p>
+            </div>
+        </div>
+        <div class="nav_icons">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #2a1b12;"></i>
+            </div>
+            <div class="profile">
+                <a href="profile.html"> <i class="fa-regular fa-user fa-xl" style="color: #2a1b12;"></i></a>
+            </div>
+            <div class="sign_up">
+                <a href="signUp.html"><button>sign up</button></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- topbar -->
+
+    <div class="topbar">
+        <div class="topbar_catagories">
+            <ul>
+                <li>Overview</li>
+                <li>Property details</li>
+                <li>Sale & tax history</li>
+                <li>Schools</li>
+                <li>Climate</li>
+            </ul>
+        </div>
+
+        <div class="topbar_icons">
+            <div class="topbar_icon"><i class="fa-regular fa-heart"></i><span></i>Favorite</span></div>
+            <div class="topbar_icon"><i class="fa-regular fa-eye-slash"></i><span></i>Hide</span></div>
+            <div class="topbar_icon"><i class="fa-regular fa-share-from-square"></i><span>Share</span></div>
+        </div>
+    </div>
+
+    <!-- hero -->
+
+    <div class="hero">
+        <div class="hero_image1 hero_image">
+            <img src="propertyimage1.jpg" alt="aa" height="100%" width="100%">
+        </div>
+        <div class="hero_image2 hero_image">
+            <img src="propertyimage2.jpg" alt="aa" height="100%" width="100%">
+        </div>
+        <div class="hero_image3 hero_image">
+            <img src="propertyimage3.jpg" alt="aa" height="100%" width="100%">
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="inner_main">
+            <div class="inner_main_left">
+                <div class="inner_main_left_secion1">
+                    <div class="inner_main_left_section1_text">
+                        <div class="inner_main_left_section1_text1"><span>FOR SALE - ACTIVE</span></div>
+                        <div class="inner_main_left_section1_text2"><span><strong>7841 S Drexel Ave,</strong> Chicago, IL 60619</span></div>
+                        <div class="inner_main_left_section1_text3">
+                            <span>$465000</span>
+                            <span>9</span>
+                            <span>4</span>
+                            <span>___</span>
+                        </div>
+                        <div class="inner_main_left_section1_text4">
+                            <span>Est. $2,790/mo</span>
+                            <!-- <span>Get pre-qualified</span> -->
+                            <span>Beds</span>
+                            <span>Baths</span>
+                            <span>Sq Ft</span>
+                        </div>
+                    </div>
+                    <div class="inner_main_left_section1_map">
+                        <div class="map">
+                            <h1>map</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_main_left_secion2">
+                    <div class="chart"><i class="fa-solid fa-chart-area"></i></div>
+                    <div class="inner_main_left_section2_text">
+                        <div class="inner_main_left_section2_text1"><h1>Rates have dropped</h1></div>
+                        <div class="inner_main_left_section2_text2"><h1>Lower rates mean lower monthly payments - learn more</h1></div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner_main_right">
+                <div class="inner_main_right_heading">
+                    <h1>Thinking of Buying</h1>
+                </div>
+
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cards">
+                                <div class="card">
+                                    <span>TUE</span>
+                                    <h1>1</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>WEN</span>
+                                    <h1>2</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>THU</span>
+                                    <h1>3</h1>
+                                    <span>SEP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards">
+                                <div class="card">
+                                    <span>FRI</span>
+                                    <h1>4</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>SAT</span>
+                                    <h1>5</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>SUN</span>
+                                    <h1>6</h1>
+                                    <span>SEP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards">
+                                <div class="card">
+                                    <span>MON</span>
+                                    <h1>7</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>TUE</span>
+                                    <h1>8</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>WEN</span>
+                                    <h1>9</h1>
+                                    <span>SEP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards">
+                                <div class="card">
+                                    <span>THU</span>
+                                    <h1>10</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>FRI</span>
+                                    <h1>11</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>SAT</span>
+                                    <h1>12</h1>
+                                    <span>SEP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards">
+                                <div class="card">
+                                    <span>SUN</span>
+                                    <h1>13</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>MON</span>
+                                    <h1>14</h1>
+                                    <span>SEP</span>
+                                </div>
+                                <div class="card">
+                                    <span>TUE</span>
+                                    <h1>15</h1>
+                                    <span>SEP</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="inner_main_right_tour">
+                    <div class="inner_main_right_tour_person">
+                        <span><i class="fa-solid fa-house-user"></i>Tour in person</span>
+                    </div>
+                    <div class="inner_main_right_tour_chat">
+                        <span><i class="fa-solid fa-mobile-button"></i>Tour via chat</span>
+                    </div>
+
+                </div>
+
+                <div class="inner_main_right_button">
+                    <button>Request Showing</button>
+                </div>
+                <p>It's free cancle any time</p>
+                <div class="or">
+                    <div class="line"></div>
+                    <span>OR</span>
+                    <div class="line"></div>
+                </div>
+
+                <div class="inner_main_right_button2">
+                    <button class="offer">Start an offer</button>
+                </div>
+
+                <div class="inner_main_right_questions">
+                    <div class="inner_main_right_questions_left">
+                        <span>Ask a question</span>
+                    </div>
+                    <div class="inner_main_right_question_right">
+                        <span>(702)935-1261</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //j query for toggle sub menus
+            $('.sub-btn').click(function () {
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            })
+
+            //j query for expand and collesp the sidebar
+
+            $('.menu-btn').click(function () {
+                $('.side-bar').fadeIn();
+                $('.menu-btn').css("visiility", "hidden");
+
+            })
+
+            $('.close-btn').click(function () {
+                $('.side-bar').fadeOut();
+                $('.menu-btn').css("visiility", "visible");
+            })
+        })
+    </script>
+</body>
+
+</html>

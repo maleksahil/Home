@@ -1,6 +1,6 @@
 body{
     margin-top: 20px;
-    background-color: lightgray;
+    background-color: rgb(87, 82, 80);;
 }
 
 .main{
@@ -8,10 +8,17 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .topbar{
-    background-color: teal;
+    background-color: #2B1B12;
     overflow: hidden;
 }
+.img{
+    background-image: url('./portrait-hapy-young-smart-man-glasses-white-wall_231208-12206.avif');
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 
+}
 .topbar a{
     float: right;
     color: white;
@@ -22,9 +29,10 @@ body{
 }
 
 .sidebar{
-    background-color: #333;
+    background-color: #DDC7BB;
     color: white;
     height: 100%;
+    color: #2B1B12;
 }
 
 .sidebar a{
@@ -34,6 +42,7 @@ body{
     padding-bottom: 10px;
     font-size: 30px;
     text-decoration: none;
+    color: #2B1B12
 }
 
 .card{

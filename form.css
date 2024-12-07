@@ -304,11 +304,11 @@ a {
 }
 
 .bg-image{
-    background-image: url("backgroundhouse.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("backgroundhouse.jpg");
     background-size: cover;
     /* border: 1px solid black; */
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
+    /* filter: blur(4px); */
+    /* -webkit-filter: blur(4px); */
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
@@ -397,11 +397,13 @@ a {
 }
 
 h3{
-    color: #00bcd4;
+    color: white;
+    margin-left: 20px;
 }
 
 .text p{
-    color: yellow;
+    color: white;
+    margin-left: 20px;
 }
 p{
     /* color: yellow; */
